@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Outfit:wght@500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(#B068E9, #6463E7);
+  padding-top: 148px;
+}
+
+section {
+  padding-bottom: 20px;
+  width: 327px;
+  /* min-height: 535px; */
+  border-radius: 23px;
+  background-color: white;
+  box-shadow: 0 px 50px (rgba(53, 18, 122, 0.4972));
+}
+
+.illustr-woman-mobile {
+  width: 236.85px;
+  height: 139.37px;
+  transform: translate(40px, -82px);
+}
+
+.illustr-woman-desktop,
+.illustr-box {
+  display: none;
+}
+
+.mob-pattern {
+  width: 180px;
+  height: 80px;
+  transform: translate(70px, -135px);
+  /* margin-top: -50px;
+  margin-left: 26px; */
+}
+
+span {
+  margin-top: -65px;
+  display: flex;
+  justify-content: center;
+  font-family: Kumbh Sans;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39.69px;
+  color: #1E1F36;
+}
+
+.button-wraper {}
+
+.accordion {
+  font-family: Kumbh Sans;
+  font-weight: 400;
+  size: 13px;
+  line-height: 16.12px;
+  background-color: white;
+  color: #4B4C5F;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #E8E8EA;
+}
+
+p {
+  font-family: Kumbh Sans;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #787887;
+}
+
+.accordion:after {
+  content: "\0076";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.opened:after {
+  content: '\005E';
+}
+
+.opened {
+  font-weight: 700;
+  color: #1E1F36;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+
+  body {
+    padding: 0;
+    height: 100vh;
+  }
+
+  section {
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -550px -285px;
+    display: flex;
+    width: 920px;
+    min-height: 509px;
+    margin: 129px 239px 130px 281px;
+    /* overflow: hidden; */
+    position: relative;
+  }
+
+  span {
+    margin-top: 20px;
+  }
+
+  .button-wraper {
+    width: 350px;
+    padding: 65px 80px 83px 67px;
+  }
+
+  .illustr-woman-desktop {
+    display: block;
+    transform: translate(-70px, 50px);
+  }
+
+  .illustr-box {
+    display: block;
+    position: absolute;
+    transform: translate(-90px, -173px);
+
+  }
+
+  .illustr-woman-mobile,
+  .mob-pattern {
+    display: none;
+  }
+
+  .accordion:hover {
+    color: #F47B56;
+  }
+}
